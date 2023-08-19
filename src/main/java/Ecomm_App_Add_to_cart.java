@@ -11,9 +11,8 @@ public class Ecomm_App_Add_to_cart {
     public static void main(String[] args) {
         EdgeOptions options = new EdgeOptions();
         options.addArguments("--remote-allow-origins=*");
-        //System.setProperty("webdriver.msedge.driver","D:\\edgedriver_win32\\msedgedriver");
-        WebDriver driver = new EdgeDriver(options
-        );
+        System.setProperty("webdriver.msedge.driver","D:\\edgedriver_win32\\msedgedriver");
+        WebDriver driver = new EdgeDriver(options);
         driver.get("https://rahulshettyacademy.com/seleniumPractise/");
         driver.manage().window().maximize();
         List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
@@ -27,6 +26,6 @@ public class Ecomm_App_Add_to_cart {
            }
         }
 
-
+        driver.quit();
     }
 }

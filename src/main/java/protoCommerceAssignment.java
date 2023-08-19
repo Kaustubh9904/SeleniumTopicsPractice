@@ -8,11 +8,12 @@ import org.testng.Assert;
 
 public class protoCommerceAssignment {
     //Assignment for Dropdowns,EditBoxes,Error Valdiation)
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         EdgeOptions options = new EdgeOptions();
+        //options.setBinary("D:\\edgedriver_win32\\msedgedriver");
         options.addArguments("--remote-allow-origins=*");
         WebDriver driver = new EdgeDriver(options);
-        System.setProperty("webdriver.chrome.driver", "D:\\edgedriver_win32\\msedgedriver");
+        System.setProperty("webdriver.edge.driver", "D:\\edgedriver_win32\\msedgedriver");
         driver.get("https://rahulshettyacademy.com/angularpractice/");
         driver.manage().window().maximize();
         driver.findElement(By.name("name")).sendKeys("Kaustubh Thakare");
