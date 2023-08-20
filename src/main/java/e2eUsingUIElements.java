@@ -29,8 +29,6 @@ public class e2eUsingUIElements {
         driver.findElement(By.xpath("//div[contains(text(),'Family & Friends')]")).click();
         driver.findElement(By.xpath("//div[@data-testid='home-page-flight-cta']")).click();
         System.out.println("Test Pass Successfully!");
-
-
         driver.quit();
     }
 }
