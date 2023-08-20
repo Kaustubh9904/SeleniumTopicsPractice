@@ -19,11 +19,6 @@ public class e2eUsingUIElements {
         driver.findElement(By.xpath("//div[contains(text(),'IXJ')]")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("//div[contains(text(),'Amritsar')]")).click();
-//        for(int i=0;i<2;i++){
-//            driver.findElement(By.cssSelector("div[class='css-1dbjc4n r-1loqt21 r-u8s1d r-11xbo3g r-1v2oles r-1otgn73 r-16zfatd r-eafdt9 r-1i6wzkk r-lrvibr r-184en5c']")).click();
-//            Thread.sleep(1000);
-//
-//        }
         Thread.sleep(1000);
         driver.findElement(By.xpath("//div[contains(@data-testid,'undefined-month-September-2023')]//div[3]//div[5]//div[4]/div[1]")).click();
         driver.findElement(By.xpath("//div[contains(text(),'1 Adult')]")).click();
