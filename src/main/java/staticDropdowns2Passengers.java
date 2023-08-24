@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class StaticDropdowns_2_Passengers {
+public class staticDropdowns2Passengers {
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver","D:\\edgedriver_win32\\msedgedriver");

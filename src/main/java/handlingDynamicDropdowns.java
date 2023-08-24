@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class Handling_Dynamic_Dropdowns {
+public class handlingDynamicDropdowns {
     public static void main(String[] args) throws InterruptedException {
 System.setProperty("webdriver.chrome.driver","D:\\edgedriver_win32\\msedgedriver");
         WebDriver driver = new EdgeDriver();

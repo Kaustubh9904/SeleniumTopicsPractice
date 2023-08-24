@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class StaticDropdowns_1_CurrencyTab {
+public class staticDropdowns1CurrencyTab {
 
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver","D:\\edgedriver_win32\\msedgedriver");

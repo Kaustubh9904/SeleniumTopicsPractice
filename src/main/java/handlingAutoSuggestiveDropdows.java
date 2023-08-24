@@ -5,7 +5,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 import java.util.List;
 
-public class Handling_AutoSuggestive_dropdows {
+public class handlingAutoSuggestiveDropdows {
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "D:\\edgedriver_win32\\msedgedriver");
@@ -21,7 +21,7 @@ public class Handling_AutoSuggestive_dropdows {
                 option.click();
                 break;
             }
-            driver.quit();;
+            driver.quit();
         }
     }
 }

@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 
-public class Handling_Checkboxes_and_Size {
+public class handlingCheckboxesnSize {
 
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "D:\\edgedriver_win32\\msedgedriver");
