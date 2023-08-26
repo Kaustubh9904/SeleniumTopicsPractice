@@ -25,17 +25,21 @@ public class eCommAppAddtocartP2 {
         for (int i = 0; i < products.size(); i++) {
             //we needed to extract specific item name, so we used trim function to trim spaces, and split()
             //to split the words using '-'.  This returns array so we changed return type to String[]
-            String[] productName = products.get(i).getText().trim().split(" -");
-            System.out.println(productName[0]);
+            String[] productName = products.get(i).getText().split("-");
+            System.out.println(productName[0].trim());
             //convert array to List on runtime, to use .contains(productname[0])in furhter condition
             List<String> itemsNeededList = Arrays.asList(itemsNeeded);
-            if (itemsNeededList.contains(productName[0])) {
+            if (itemsNeededList.contains(productName[0].trim())) {
                 count++;
                 driver.findElements(By.cssSelector("a.increment")).get(i).click();
-                driver.findElements(By.xpath("//button[text()='ADD TO CART']")).get(i).click();
-            }
-            if (count == itemsNeeded.length) {
-                break;
+                //initially we used the xpath in the below statement as //button[text()='ADD TO CART']
+                //but that was inconsistent and messed up with the indexes when clicked on ADD TO CART because
+                // ADD TO CART turned orange when clicked and the indexes got messed up. So we use the below Xpath
+                // that remains constant
+                driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
+                if (count == itemsNeeded.length) {
+                    break;
+                }
             }
         }
         driver.quit();
