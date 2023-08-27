@@ -1,11 +1,11 @@
 package implicitAndExplicitWaits;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -18,7 +18,7 @@ public class implicitWaitExample {
                 WebDriver driver = new EdgeDriver(options);
                 driver.get("https://rahulshettyacademy.com/seleniumPractise/");
                 driver.manage().window().maximize();
-                driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
                 //get list of webelements by the used xpath in a variable called products
                 //loop through the list of elements in products, store text of that element on that particulr index using
                 //productName string using get(i) method. Then if it matches requirement click on current index element.
