@@ -2,12 +2,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.support.ui.Select;
 
 public class staticDropdowns1CurrencyTab {
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","D:\\edgedriver_win32\\msedgedriver");
+        EdgeOptions options = new EdgeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        System.setProperty("webdriver.msedge.driver", "D:\\edgedriver_win32\\msedgedriver");
         WebDriver driver = new EdgeDriver();
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
         WebElement staticDropdown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
