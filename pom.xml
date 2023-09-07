@@ -46,6 +46,12 @@
         <version>4.8.1</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/htmlunit-driver -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>htmlunit-driver</artifactId>
+        <version>4.12.0</version>
+    </dependency>
 
 </dependencies>
 </project>

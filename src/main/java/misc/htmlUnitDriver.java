@@ -3,19 +3,20 @@ package misc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class htmlUnitDriver {
     public static void main(String[] args) {
 // Creating a new instance of the HTML unit driver
-
+        EdgeOptions options = new EdgeOptions();
+        options.addArguments("--remote-allow-origins=*");
         WebDriver driver = new HtmlUnitDriver();
-
         // Navigate to Google
         driver.get("http://www.google.com");
 
         // Locate the searchbox using its name
-        WebElement element = driver.findElement(By.name("q"));
+        WebElement element = driver.findElement(By.id("APjFqb"));
 
         // Enter a search query
         element.sendKeys("Guru99");
